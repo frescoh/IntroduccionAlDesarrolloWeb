@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		table, th, td{
+			border: 1px solid black;
+		}
+		tfoot{
+			background: violet;
+		}
+		thead{
+			background: black;
+			color: aliceblue;
+		}
+		tbody{
+			background: aqua;
+		}
+	</style>
+	<title>Tablas</title>
+</head>
+<body>
+	<h1>Esta es una tabla para mostrar el uso de las etiquetas colspan y rowspan</h1>
+	<!--
+			th: Table head 	-	Cabecera
+			tr: Table Row	-	Fila
+			td: Table Data 	-	celda
+
+			thead: Agrupa a todas la th
+			tbody: Agrupa a las celdas con datos
+			tfoot: Muestra un pie de tabla
+		-->
+		<!--Border agrega un borde de color negro de 1pixel de ancho. Ver Style table, th, td-->
+	<table cellpadding="20">
+		<thead><!--Cabecera-->
+			<tr>
+				<th>Continente</th>
+				<th>Pais</th>
+				<th colspan="2">Idioma</th>
+			</tr>
+		</thead>
+		<tbody><!--Cuerpo de la tabla, aqui estan todos los datos-->
+			<tr>
+				<td rowspan="4">America</td>
+				<td>Argentina</td>
+				<td>Español</td>
+			</tr>
+			<tr>
+				<td>Chile</td>
+				<td>Español</td>
+			</tr>
+			<tr>
+				<td>Bolivia</td>
+				<td>Español</td>
+			</tr>
+			<tr>
+				<td>Paraguay</td>
+				<td>Español</td>
+				<td>Guarani</td>
+			</tr>
+			<tr>
+				<td>Europa</td>
+				<td>Italia</td>
+				<td>
+					<span style="color: green;">Ita</span><span style="color: white;">li</span><span style="color: red;">ano</span>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot><!--Pie de tabla. Aqui podria haber un resumen-->
+			<td colspan="2">Idioma más hablado</td>
+			<td colspan="2">Español</td>
+		</tfoot>
+	</table>
+</body>
+</html>

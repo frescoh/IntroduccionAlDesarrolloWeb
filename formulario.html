@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+
+	<form action="enDodne" method="POST">
+		<!--Elementos:
+				Checkbox
+				radiobutton
+				select
+				submit
+				Reset
+				upload
+				Contraseña
+		-->
+		<label>Seleccione su facultad</label>
+		<select>
+			<option>Seleccione su facultad</option>
+			<option value="1">Cs Exactas</option>
+			<option value="2">Salud</option>
+			<option value="3">Ingenieria</option>
+			<option value="4">Cs Natrales</option>
+			<option value="5">Cs Economicas</option>
+			<option value="6">Humanidades</option>
+		</select>
+		<br>
+		<label>Seleccione los dias que cursa</label><br>
+		<input type="checkbox" name="d1">Lunes<br>
+		<input type="checkbox" name="d2">Martes<br>
+		<input type="checkbox" name="d3">Miercoles<br>
+		<input type="checkbox" name="d4">Jueves<br>
+		<input type="checkbox" name="d5">Viernes<br>
+		<input type="checkbox" name="d6">Sabado<br>
+		
+		<label>Indique la modalidad de cursado</label><br>
+		<input type="radio" name="modalidadCursado">Presencial <br>
+		<input type="radio" name="modalidadCursado">Virtual <br>
+		<input type="radio" name="modalidadCursado">Mixta <br>
+		<input type="password" name="" id=""> Ingrese la Contraseña <br>
+
+		<label>Suba su certificado de alumno regular</label>
+		<input type="file" id="certificado" name="certificado"><br>
+		<br>
+		<input type="submit" name=""> 	<!--submit envia todo el formulario usando los parametros action y method del form-->
+		<button type= button>Tipo boton</button>
+		<button type= reset>Reset</button>
+		<button type= submit>Tipo submit</button>
+		<!--Button es mucho más versatil que type="submit":
+			button: Tenemos que definir el comportamiento con, ej. JS
+			reset: 	Resetea el form por defecto
+			submit: Por defecto, lo mismo que submit de input-->
+
+
+		<input type="hidden" value="Dato oculto para el usuario"> <!--Esto permite enviar informacion extra en el formulario-->
+	</form>
+	<!--
+		Atributos:
+			id: Valor unico
+			name
+			value
+			Placeholder: Muestra un texto guia en gris que desaparece cuando se empieza  a escribir
+			checked: si queremos alguna opcion seleccionada por defecto solod debemos poner checked en los atributos
+			size: Modifica el tamaño de los elementos
+			maxlength: Limita la longitud maxima de los valores que ingresaremos
+			selected: selecciona una opcion de un combobox
+			readonly: 
+			disable= "disabled"
+	-->
+
+
+</body>
+</html>
